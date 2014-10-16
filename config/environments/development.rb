@@ -35,6 +35,6 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  config.middleware.use Rack::Prerender, prerender_token: '2PzPGHuYRS3spJk6aw9v'
-  config.middleware.use Rack::Prerender
+  config.middleware.use Rack::Prerender, prerender_token: '2PzPGHuYRS3spJk6aw9v', prerender_service_url: 'http://localhost:3000'
+  # config.middleware.use Rack::Prerender
 end
